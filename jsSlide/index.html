@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>make slide</title>
+	
+	<style>
+		*{margin:0;padding:0}
+		li{list-style:none}
+		button{border:0;cursor:pointer}
+		#wrap{max-width:1200px;margin:0 auto}
+		
+		
+		.jsSlide-wrap{position:relative;width:600px;margin:0 auto}
+		.jsSlide-inner{/*overflow:hidden;*/position:relative;width:600px;}
+		.jsSlide-inner .jsSlide-list{position:relative;width:10000%;height:100%}
+		.jsSlide-inner .jsSlide-list:after{content:'';display:block;clear:both}
+		.jsSlide-inner .jsSlide-list li{float:left;width:600px;height:150px; text-align:center}
+		
+		.jsSlide-wrap .jsSlide-btn{/*position:absolute;*/width:35px;height:72px; background-color:#000;color:#fff}
+		.jsSlide-wrap .jsSlide-btn.prev{left:0;}
+		.jsSlide-wrap .jsSlide-btn.next{right:0;}
+		.jsSlide-wrap .jsSlide-btn.play{top:0;left:0;width:40px;height:40px; background-color:navy;color:#fff}
+		.jsSlide-wrap .jsSlide-btn.play.stop{background-color:#e9967a;color:navy}
+		
+		.jsSlide-wrap .jsSlide-indigate{text-align:center}
+		.jsSlide-wrap .jsSlide-indigate a{display:inline-block;width:20px;height:20px;background-color:#000000;border-radius:0;line-height:20px; text-decoration:none;color:#ffffff}
+		.jsSlide-wrap .jsSlide-indigate a.on{background-color:#e9967a}
+		
+		/* temp */
+		div[class*="slide-content"]{display:inline-block;width:100%;height:100%;text-align:center;vertical-align:middle}
+		div.slide-content0{background-color:red}
+		div.slide-content1{background-color:orange}
+		div.slide-content2{background-color:yellow}
+		div.slide-content3{background-color:green}
+		div.slide-content4{background-color:blue}
+		div.slide-content5{background-color:navy}
+		div.slide-content6{background-color:purple}
+	</style>
+</head>
+<body>
+<div id="wrap">
+	<div class="jsSlide-wrap" id="slide0">
+		<div class="jsSlide-inner">
+			<ul class="jsSlide-list">
+				<li class="jsSlide-item">
+					<div class="slide-content0">슬라이드0</div>
+				</li>
+				<li class="jsSlide-item">
+					<div class="slide-content1">슬라이드1</div>
+				</li>
+				<li class="jsSlide-item">
+					<div class="slide-content2">슬라이드2</div>
+				</li>
+				<li class="jsSlide-item">
+					<div class="slide-content3">슬라이드3</div>
+				</li>
+				<li class="jsSlide-item">
+					<div class="slide-content4">슬라이드4</div>
+				</li>
+				<li class="jsSlide-item">
+					<div class="slide-content5">슬라이드5</div>
+				</li>
+				<li class="jsSlide-item">
+					<div class="slide-content6">슬라이드6</div>
+				</li>
+			</ul>
+		</div>
+		<button class="jsSlide-btn prev">이전</button>
+		<button class="jsSlide-btn next">다음</button>
+		<button class="jsSlide-btn play stop">재생</button>
+		<div class="jsSlide-indigate"></div>
+	</div>
+</div>
+<script src="../js/jquery-1.12.4.js"></script>
+<script src="jsSlide.js"></script>
+
+</body>
+</html>
