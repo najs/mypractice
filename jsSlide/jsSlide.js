@@ -38,6 +38,11 @@ var jsSlide = (function(container,options){
 		}
 	};
 
+	var auto = {
+		
+
+	}
+
 	var init = {
 		run : function(){
 			clickEv.next();
