@@ -2,6 +2,8 @@
 var jsSlide = (function(container,options){
 	"use strict";
 
+	console.info(this);
+
 	var defaults = {
 		slideContainter : $(container),
 		slideList : options.slideWrapClass || '.jsSlide-list',
@@ -21,32 +23,31 @@ var jsSlide = (function(container,options){
 
 	var clickEv = {
 		next : function(){
-			defaults.slideContainter.find(defaults.btnNext).on('click',function(e){
+			defaults.slideContainter.on('click',defaults.btnNext,function(e){
 				e.preventDefault();
 				next();
 				moving();
 				console.log('다음!!!',defaults.presentIdx)
-			})
+			});
 		},
 		prev : function(){
-			defaults.slideContainter.find(defaults.btnPrev).on('click',function(e){
+			defaults.slideContainter.on('click',defaults.btnPrev,function(e){
 				e.preventDefault();
 				prev();
 				moving();
 				console.log('이전!!!',defaults.presentIdx)
 			})
+		},
+		cloning : function(){
+			defaults.slideList.append(defaults.slideItem[2]);
 		}
 	};
-
-	var auto = {
-		
-
-	}
 
 	var init = {
 		run : function(){
 			clickEv.next();
 			clickEv.prev();
+			clickEv.cloning()
 
 		}
 	};
@@ -70,12 +71,7 @@ var jsSlide = (function(container,options){
 			transform: 'translate('+-600*defaults.presentIdx+"px,0)"
 		})
 	}
-
 });
-
-
-
-
 
 var slide0 = new jsSlide("#slide0",{
 	/* firstIdx : 0 */
@@ -83,6 +79,3 @@ var slide0 = new jsSlide("#slide0",{
 	btnPrev : '.jsSlide-btn.prev'
 
 });
-
-
-
