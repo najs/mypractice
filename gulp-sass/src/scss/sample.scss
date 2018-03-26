@@ -1,0 +1,13 @@
+@import "global/mixins";
+
+$component-name: 'compoName';
+
+
+/* desktop */
+@import 'desktop';
+
+
+/* mobile */
+@include breakpoint(mobile) {
+	@import 'mobile';
+}
