@@ -2,12 +2,6 @@
 
 $component-name: 'compoName';
 
-
-/* desktop */
 @import 'desktop';
+@import 'mobile';
 
-
-/* mobile */
-@include breakpoint(mobile) {
-	@import 'mobile';
-}

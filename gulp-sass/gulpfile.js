@@ -21,7 +21,9 @@ gulp.task('sass',function(){
 		})
 	];
 
-	return gulp.src(['src/scss/global/reset.scss','src/scss/sample.scss']).
+	var paths = ['src/scss/global/reset.scss','src/scss/sample.scss'];
+
+	return gulp.src(paths).
 	pipe(sass(scssOptions).on('error', sass.logError)).
 	pipe(sourcemaps.init()).
 	pipe(postcss(processors)).

@@ -1,6 +1,8 @@
-.#{$component-name}{
-	&__img-wrap, &__txt-wrap{
-		display:block;
-		width:100%;
+@include breakpoint(mobile) {
+	.#{$component-name}{
+		&__img-wrap, &__txt-wrap{
+			display:block;
+			width:100%;
+		}
 	}
 }
