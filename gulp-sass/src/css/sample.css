@@ -1,0 +1,27 @@
+.compoName { background-color: #fff; letter-spacing: -6px; }
+
+.compoName.txt-align-right { direction: rtl; }
+
+.compoName__btn-wrap { padding: 0 5%; text-align: left; }
+
+.compoName__btn-wrap.btn-align-center { text-align: center; }
+
+.compoName__btn-wrap a, .compoName__btn-wrap button { display: inline-block; padding: 5px 20px; padding: 0.34722vw 1.38889vw; text-align: center; text-transform: uppercase; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; -webkit-transition-property: background,color, border-color; -o-transition-property: background,color, border-color; -moz-transition-property: background,color, border-color; transition-property: background,color, border-color; font-size: 12px; }
+
+@media (min-width: 1440px) { .compoName__btn-wrap a, .compoName__btn-wrap button { padding: 5px 20px; } }
+
+.compoName__btn-wrap .btn-bor { border: 1px solid #000; -webkit-border-radius: 45px; -moz-border-radius: 45px; border-radius: 45px; background-color: transparent; color: #000; line-height: 1; font-weight: bold; white-space: nowrap; }
+
+.compoName__btn-wrap .btn-bor:hover { background-color: #000; color: #fff; }
+
+.compoName__btn-wrap .btn-link { color: #000; }
+
+.compoName__btn-wrap .btn-link:hover { color: #0000fe; }
+
+.compoName__txt-wrap .compoName__title, .compoName__txt-wrap .compoName__desc { padding: 0 5%; }
+
+.compoName__img-wrap, .compoName__txt-wrap { display: inline-block; position: relative; width: 50%; vertical-align: middle; text-align: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; direction: ltr; letter-spacing: 0; }
+
+.compoName__img-wrap img { width: 100%; height: auto; }
+
+@media screen and (max-width: 768px) { .compoName__img-wrap, .compoName__txt-wrap { display: block; width: 100%; } }
