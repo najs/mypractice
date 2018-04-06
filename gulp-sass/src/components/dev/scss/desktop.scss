@@ -1,22 +1,22 @@
-.#{$component-name}{
+.#{$component-name} {
 	background-color:#fff;
 	letter-spacing:-6px;
 	
-	&.txt-align-left{
-		direction:ltr;
+	&.txt-align-#{$def-float} {
+		direction:#{$def-direction};
 	}
 	
-	&.txt-align-right{
-		direction:rtl;
+	&.txt-align-#{$opp-float} {
+		direction:#{$opp-direction};
 	}
 	
-	&__btn-wrap{
+	&__btn-wrap {
 		padding:0 5%;
 		text-align:left;
-		&.btn-align-center{
+		&.btn-align-center {
 			text-align:center;
 		}
-		a,button{
+		a,button {
 			display:inline-block;
 			@include vw-convert-pc(padding, 5 20);
 			text-align:center;
@@ -25,7 +25,7 @@
 			transition-property: background,color, border-color;
 			font-size: 12px;
 		}
-		.btn-bor{
+		.btn-bor {
 			border: 1px solid #000;
 			border-radius: 45px;
 			background-color: transparent;
@@ -34,37 +34,37 @@
 			font-weight: bold;
 			white-space: nowrap;
 			
-			&:hover{
+			&:hover {
 				background-color:#000;
 				color:#fff
 			}
 		}
-		.btn-link{
+		.btn-link {
 			color:#000;
 			
-			&:hover{
+			&:hover {
 				color:#0000fe;
 			}
 			
 		}
 	}
-	&__txt-wrap{
+	&__txt-wrap {
 		.#{$component-name}__title,
-		.#{$component-name}__desc{
+		.#{$component-name}__desc {
 			padding:0 5%
 		}
 	}
-	&__img-wrap, &__txt-wrap{
+	&__img-wrap, &__txt-wrap {
 		display:inline-block;
 		position: relative;
 		width:50%;
 		vertical-align:middle;
 		text-align: left;
 		box-sizing: border-box;
-		direction: ltr;
+		direction: #{$def-float};
 		letter-spacing:0;
 	}
-	&__img-wrap img{
+	&__img-wrap img {
 		width:100%;
 		height:auto
 	}

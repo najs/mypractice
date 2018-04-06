@@ -1,4 +1,8 @@
+/*     Colors       */
+/*    Break Points    */
 .compoName { background-color: #fff; letter-spacing: -6px; }
+
+.compoName.txt-align-left { direction: ltr; }
 
 .compoName.txt-align-right { direction: rtl; }
 
@@ -20,7 +24,7 @@
 
 .compoName__txt-wrap .compoName__title, .compoName__txt-wrap .compoName__desc { padding: 0 5%; }
 
-.compoName__img-wrap, .compoName__txt-wrap { display: inline-block; position: relative; width: 50%; vertical-align: middle; text-align: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; direction: ltr; letter-spacing: 0; }
+.compoName__img-wrap, .compoName__txt-wrap { display: inline-block; position: relative; width: 50%; vertical-align: middle; text-align: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; direction: left; letter-spacing: 0; }
 
 .compoName__img-wrap img { width: 100%; height: auto; }
 
