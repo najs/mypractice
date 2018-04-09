@@ -5,8 +5,6 @@ var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer  = require('autoprefixer');
-var watch = require('gulp-watch');
-
 
 var isProd = true;
 
@@ -46,11 +44,11 @@ gulp.task('sass',function(){
 });
 
 gulp.task('sass:watch', function () {
-	gulp.watch('src/components/dev/scss', ['sass']);
+	gulp.watch('src/**/*.scss', ['sass']);
 });
 
 gulp.task('compile', ['sass'], function(){});
 
-gulp.task('default', [
-	'sass'
-]);
+gulp.task('default', function(){
+
+});

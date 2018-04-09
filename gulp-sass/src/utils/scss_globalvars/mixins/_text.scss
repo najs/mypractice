@@ -1,9 +1,17 @@
 // Text Styling
-@mixin multi-ellipsis($line){
+@mixin multi-ellipsis($line) {
 	display:block;
 	display:-webkit-box;
 	overflow:hidden;
 	-webkit-line-clamp:$line;
 	-webkit-box-orient:vertical;
 	text-overflow:ellipsis;
+}
+
+@mixin txt_hide {
+	display:inline-block;
+	overflow:hidden;
+	line-height:9999px;
+	vertical-align:top;
+	color:transparent;
 }
