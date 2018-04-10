@@ -10,27 +10,11 @@
 }
 
 @mixin text-align($dir) {
-  	@if $dir == left {
+	@if $dir == left {
 	    text-align: $def-float;
 	} @else if $dir == right {
 	    text-align: $opp-float;
 	} @else {
 	    text-align: $dir;
-  	}
-}
-
-@mixin padding-left($unit) {
-	padding-#{$def-float}: $unit;
-}
-
-@mixin padding-right($unit) {
-	padding-#{$opp-float}: $unit;
-}
-
-@mixin margin-left($unit) {
-	padding-#{$def-float}: $unit;
-}
-
-@mixin margin-right($unit) {
-	padding-#{$opp-float}: $unit;
+	}
 }
